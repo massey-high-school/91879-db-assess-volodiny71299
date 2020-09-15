@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    padding: 50px;
+    padding: 30px;
     color: #000;
     font-family: 'Lato', sans-serif;
 }
@@ -10,14 +10,13 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 150px 200px 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "banner banner"
-        "nav nav"
-        "side main"
-        "footer footer";
-        grid-gap: 4px;
+        "banner banner banner banner"
+        "side side main main"
+        "footer footer footer footer";
+        grid-gap: 5px;
     
 }
 
@@ -28,50 +27,52 @@ body {
 
 .box {
     padding: 20px;
-    /* border-radius: 10px; */
     background-color: #ddd;
+    border-radius: 10px;
 }
 
 /* Area colouring... */
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #888;  /* dark grey */
+    background-color: #cfebea;  /* dark grey */
+}
+
+.logo, .banner {
+    column-gap: 0px;
 }
 
 /* Set font on dark areas to white */
-.logo, .banner, .side, .footer {
+.side {
     color: #fff;
 }
 
 /* Area specifics */
 
 .logo {
+    grid-area: logo;
     padding: 0;
-    float: left;
-    
+    height: 150px;
+    width: auto;
+    background-image: url(burger_logo-v2.png);
 }
 
 .banner {
     grid-area: banner;
-}
-
-.nav {
-    grid-area: nav;
-    background-color: #DDD;  /* silver */
-    font-size: 150%;
+/*    vertical-align: middle;*/
     text-align: center;
+    height: 150px;
 }
 
 .side {
     grid-area: side;
-    background-color: #333;
+    background-color: #555;
+    
 }
 
 .main {
     grid-area: main;
     background-color: #EEE;  /* very pale grey */
-    border: solid 1px #CCC;
 }
 
 
@@ -107,9 +108,6 @@ a:hover{color: #000;}    /* Black*/
 
 .img-circle {
     border-radius: 50%;
-    max-width: 85%;
-    height: auto;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);     
 }
 
 .center_image {
