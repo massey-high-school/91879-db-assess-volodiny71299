@@ -8,15 +8,11 @@
             </p>
             
             <p>
-                One of my favourite dishes of them all is the 'Smoked Salmon Omelet' and on top of that I like other dishes such as the 'Filo Chicken Pie', 'French Toast' and 'Sushi'.
+                Some of my favourite dishes are the 'Smoked Salmon Omelet', 'Filo Chicken Pie', 'French Toast' and 'Sushi'.
             </p>
             
         </div>    <!-- end of main -->
         
-        <div class="box side"> <!-- start of side bar -->
-            <p>Side bar goes here</p>
-        </div> <!-- end of side bar -->
+        <?php include "side.php";?>
 
-        <div class="box footer">
-            <p>CC YV 2020</p>
-        </div>
+        <?php include "footer.php";?>

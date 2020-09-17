@@ -45,15 +45,16 @@
     
         <a href="index.php">
 
-
+            <div class="box logo">
+            
+            </div>
+            
         </a> <!-- / Link -->
         
         <div class="box banner">
-            <a href="index.php">
-            <img class="img-circle" src="css/burger_logo-v2.png" alt=""/>>
-            </a>
             
-            <h1>Food Review</h1>
+            <h1 style="font-size: 40px">Food Review</h1>
+        
         </div>    <!-- / banner -->
 
         

@@ -10,10 +10,10 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 150px 200px 2fr 1fr;
+    grid-template-columns: 150px 150px 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "banner banner banner banner"
+        "logo banner banner banner"
         "side side main main"
         "footer footer footer footer";
         grid-gap: 5px;
@@ -27,19 +27,15 @@ body {
 
 .box {
     padding: 20px;
-    background-color: #ddd;
     border-radius: 10px;
+    border: solid #111 1px;
 }
 
 /* Area colouring... */
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #cfebea;  /* dark grey */
-}
-
-.logo, .banner {
-    column-gap: 0px;
+    background-color: #88d1ce;  /* light mint */
 }
 
 /* Set font on dark areas to white */
@@ -54,14 +50,17 @@ body {
     padding: 0;
     height: 150px;
     width: auto;
-    background-image: url(burger_logo-v2.png);
+    background-image: url(burger_logo-v3.png);
 }
 
 .banner {
+    padding: 0;
+    padding-left: 20px;
     grid-area: banner;
-/*    vertical-align: middle;*/
-    text-align: center;
+    display: flex;
     height: 150px;
+    align-items:center;
+    justify-content: left;
 }
 
 .side {
@@ -72,12 +71,14 @@ body {
 
 .main {
     grid-area: main;
-    background-color: #EEE;  /* very pale grey */
+    background-color: #f0fff9;  /* very pale grey */
 }
 
 
 .footer {
     grid-area: footer;
+    padding: 0;
+    padding-right: 20px;
     text-align: right;
 }
 
@@ -121,6 +122,20 @@ a:hover{color: #000;}    /* Black*/
     font-weight: bold;
 }
 
+.results {
+    padding: 10px;
+    background-color: #d3f2f0;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.error {
+    background-color: #ffe0ed; /* pale pink */
+    border: 2px solid #8a1737; /* dark red border */
+    color: #8a1737; /* dark red */
+    border-radius: 10px;
+    padding: 10px;
+}
 
 
 
