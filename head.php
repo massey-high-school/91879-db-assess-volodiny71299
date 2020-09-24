@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
-    <link rel="stylesheet" href="css/foo.css"> 
+    <link rel="stylesheet" href="css/styles.css"> 
     
 </head>
     

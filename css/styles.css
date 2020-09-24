@@ -3,6 +3,11 @@ body {
     padding: 30px;
     color: #000;
     font-family: 'Lato', sans-serif;
+    background: url(wallapper.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -26,7 +31,7 @@ body {
 /* -000- Area styling -000- */
 
 .box {
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     border: solid #111 1px;
 }
@@ -88,17 +93,11 @@ h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* Navigation Links */
-.nav a {font-weight: bold;}
-.nav a:link, .nav a:visited {color: #AA0000;} /*dark red */
-.nav a:hover {color: #604830; text-decoration: none;} /* chocolate brown */
-
-
 /* links in page */
 a {font-weight: bold;}
-a:link{color: #AA0000;} /*dark_red */
-a:visited{color: #111177;} /* dark blue */
-a:hover{color: #000;}    /* Black*/
+a:link{color: #90dece;} /*dark_red */
+a:visited{color: #e0fff9;} /* dark blue */
+a:hover{color: #dedede;}    /* Black*/
 
 
 /* Contact Form Styling */
@@ -118,7 +117,7 @@ a:hover{color: #000;}    /* Black*/
 /* Sub Heading Formatting */
 .sub_heading {
     font-family: 'Ubuntu', sans-serif;
-    color: #593849; /* purple */
+    color: #000; /* purple */
     font-weight: bold;
 }
 
@@ -137,16 +136,51 @@ a:hover{color: #000;}    /* Black*/
     padding: 10px;
 }
 
+.search {
+    width: 200px;
+    padding: 8px 15px;
+    background: #fff;
+    border: 0px solid #dbdbdb;
+}
 
+.submit {
+    font-family: FontAwesome;
+    position: relative;
+    width: 45px;
+    background-color: white;
+    color: #000;
+    border: 1px solid #fff;
+    border-radius: 0 5px 5px 0;
+}
 
+input[type="submit"]:hover {
+    background-color: #222831;
+}
 
+input {
+    height: 50px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 
+.half_width {
+    width: 99px;
+}
 
+select {
+/*    outline: 0;*/
+    height: 45px;
+    border: 1px solid #ccc;
+    color: #000;
+    width: 200px;
+}
 
-
-
-
-
+form {
+    width: 250px;
+    margin: 0;
+}
 
 
 
