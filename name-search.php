@@ -6,7 +6,7 @@ if(isset($_POST['find_name']))
     
 {
 // Retrieves name and sanitises it.
-$title=test_input(mysqli_real_escape_string($dbconnect,$_POST['name']));
+$name=test_input(mysqli_real_escape_string($dbconnect,$_POST['name']));
 
 $find_sql="SELECT *
             FROM `2020_L1_assess_food_review`
