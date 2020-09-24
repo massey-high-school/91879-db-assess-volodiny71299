@@ -141,6 +141,7 @@ a:hover{color: #dedede;}    /* Black*/
     padding: 8px 15px;
     background: #fff;
     border: 0px solid #dbdbdb;
+    border-radius: 5px;
 }
 
 .submit {
@@ -150,11 +151,11 @@ a:hover{color: #dedede;}    /* Black*/
     background-color: white;
     color: #000;
     border: 1px solid #fff;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
 }
 
 input[type="submit"]:hover {
-    background-color: #222831;
+    background-color: #d8d8d8;
 }
 
 input {
